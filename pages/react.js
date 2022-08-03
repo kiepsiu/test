@@ -1,1 +1,5 @@
-ReactDOM.render(<p>Hello,Chuju!</p>)
+const Page = () => {
+    return <p>Hello,Chuju!</p>
+}
+
+export default Page
