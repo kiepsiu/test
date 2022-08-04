@@ -21,6 +21,6 @@ const Fun = () => {
   );
 };
 const Img = () => {
-  return <img src="/home/krzysztof/Desktop/nextjs-blog/img/reactLogo.png" />;
+  return <img src="/reactLogo.png" />;
 };
 export default Fun;
