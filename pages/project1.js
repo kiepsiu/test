@@ -1,3 +1,9 @@
+import { useEffect, useState } from 'react';
+
+const Img = () => {
+  return <img src="/reactLogo.png" style={{ blockSize: '150px' }} />;
+};
+
 const List = () => {
   return (
     <ul style={{ fontSize: '35px', color: 'black' }}>
@@ -10,16 +16,27 @@ const List = () => {
   );
 };
 
+const Clock = () => {
+  const [now, setNow] = useState(new Date());
+
+  useEffect(() => {
+    setInterval(() => {
+      setNow(new Date());
+    }, 1000);
+  }, []);
+
+  return <h2>{now.toLocaleString()}</h2>;
+};
+
 const Fun = () => {
   return (
     <div style={{ width: '1500px', padding: '30px 200px 30px 200px' }}>
       <Img style={{ textAlign: 'left' }} />
+      <Clock />
       <h1 style={{ fontSize: '100px', textAlign: 'center', color: 'black' }}>Fun facts about React</h1>
       <List />
     </div>
   );
 };
-const Img = () => {
-  return <img src="/reactLogo.png" style={{ blockSize: '150px' }} />;
-};
+
 export default Fun;
