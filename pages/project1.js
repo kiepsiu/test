@@ -1,6 +1,6 @@
 const List = () => {
   return (
-    <ul>
+    <ul style={{ fontSize: '35px', color: 'black' }}>
       <li>Was first released in 2013</li>
       <li>Was originally created by Jordan Walke</li>
       <li>Has well over 100k stars on Github</li>
@@ -12,15 +12,14 @@ const List = () => {
 
 const Fun = () => {
   return (
-    <div style={{ textAlign: 'center', color: 'black' }}>
-      <h1 style={{ textSizeAdjust: 250 }}>Fun facts about React</h1>
-      <h3>Michal op programista</h3>
+    <div style={{ width: '1500px', padding: '30px 200px 30px 200px' }}>
+      <Img style={{ textAlign: 'left' }} />
+      <h1 style={{ fontSize: '100px', textAlign: 'center', color: 'black' }}>Fun facts about React</h1>
       <List />
-      <Img />
     </div>
   );
 };
 const Img = () => {
-  return <img src="/reactLogo.png" />;
+  return <img src="/reactLogo.png" style={{ blockSize: '150px' }} />;
 };
 export default Fun;
