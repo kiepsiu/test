@@ -13,7 +13,7 @@ const List = () => {
 const Fun = () => {
   return (
     <div style={{ textAlign: 'center', color: 'black' }}>
-      <h1>Fun facts about React</h1>
+      <h1 style={{ textSizeAdjust: 250 }}>Fun facts about React</h1>
       <h3>Michal op programista</h3>
       <List />
       <Img />
